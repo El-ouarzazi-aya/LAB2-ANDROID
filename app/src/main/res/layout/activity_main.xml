@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F0F4F8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcul du taxe"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="28dp" />
+
+    <EditText
+        android:id="@+id/input_surface"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="Entrez la surface en m²"
+        android:inputType="number"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#212121"
+        android:textColorHint="#90A4AE"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/input_pieces"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="Nombre de pièces du bien"
+        android:inputType="number"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#212121"
+        android:textColorHint="#90A4AE"
+        android:layout_marginBottom="16dp" />
+    <CheckBox
+        android:id="@+id/checkbox_piscine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avec piscine"
+        android:textColor="#1A237E"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/button_calcul"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Estimer l'impôt"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#1A237E"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
